@@ -19,21 +19,26 @@
   <meta name="author" content="yuqi pan">
   <meta name="keywords" content="">
   
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+    <meta name="description" content="Docker 环境配置难题 软件开发的一大难题就是环境配置，因为不同用户的计算机环境都不相同，在自己电脑能运行的软件不一定能在其他机器上跑起来。 软件能够正常运行需要保证1.操作系统的设置 2.各种库和组件的安装。例如安装一个Phthon应用，计算机必须要用Python引擎，还必须有各种依赖，可能还要配置环境变量。某些老旧的模块与当前的环境不相容，换一次机器可能就需要重新配置一次环境，旷日费时。解">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://example.com/2025/07/22/hello-world/index.html">
+<meta property="og:title" content="Docker">
+<meta property="og:url" content="http://example.com/2025/04/13/Docker/index.html">
 <meta property="og:site_name" content="haechannnnn">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="Docker 环境配置难题 软件开发的一大难题就是环境配置，因为不同用户的计算机环境都不相同，在自己电脑能运行的软件不一定能在其他机器上跑起来。 软件能够正常运行需要保证1.操作系统的设置 2.各种库和组件的安装。例如安装一个Phthon应用，计算机必须要用Python引擎，还必须有各种依赖，可能还要配置环境变量。某些老旧的模块与当前的环境不相容，换一次机器可能就需要重新配置一次环境，旷日费时。解">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2025-07-22T02:26:52.844Z">
-<meta property="article:modified_time" content="2025-07-22T02:26:52.844Z">
+<meta property="article:published_time" content="2025-04-13T06:51:06.000Z">
+<meta property="article:modified_time" content="2025-07-22T07:28:54.270Z">
 <meta property="article:author" content="yuqi pan">
+<meta property="article:tag" content="Docker">
+<meta property="article:tag" content="Containerization">
+<meta property="article:tag" content="DevOps">
+<meta property="article:tag" content="Deployment">
+<meta property="article:tag" content="Backend">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>Hello World - haechannnnn</title>
+  <title>Docker - haechannnnn</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -212,7 +217,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="Hello World"></span>
+            <span id="subtitle" data-typed-text="Docker"></span>
           
         </div>
 
@@ -223,8 +228,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2025-07-22 10:26" pubdate>
-          2025年7月22日 上午
+        <time datetime="2025-04-13 14:51" pubdate>
+          2025年4月13日 下午
         </time>
       </span>
     
@@ -235,7 +240,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          18 字
+          1.5k 字
         
       </span>
     
@@ -246,7 +251,7 @@
         
         
         
-          1 分钟
+          15 分钟
         
       </span>
     
@@ -292,25 +297,83 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">Hello World</h1>
+            <h1 id="seo-header">Docker</h1>
             
             
               <div class="markdown-body">
                 
-                <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure>
+                <p><strong>Docker</strong></p>
+<p><strong>环境配置难题</strong></p>
+<p>软件开发的一大难题就是环境配置，因为不同用户的计算机环境都不相同，在自己电脑能运行的软件不一定能在其他机器上跑起来。</p>
+<p>软件能够正常运行需要保证1.操作系统的设置 2.各种库和组件的安装。例如安装一个Phthon应用，计算机必须要用Python引擎，还必须有各种依赖，可能还要配置环境变量。某些老旧的模块与当前的环境不相容，换一次机器可能就需要重新配置一次环境，旷日费时。解决问题的方法就是带环境安装软件，也就是说安装软件的时候把原始环境一模一样地复制过来。</p>
+<p><strong>虚拟机virtual machine</strong></p>
+<p>虚拟机就是带环境安装的一种解决方法。它可以在一种操作系统里面运行另一种操作系统，例如在Windows系统里运行Linux系统。对于应用程序，虚拟机和真实系统一模一样，对于底层系统，虚拟机就是一个普通文件，不需要可以直接删去。但是，通过虚拟机来还原软件原始环境有几个缺点：</p>
+<p>资源占用多 虚拟机会独占一部分内存和硬盘空间</p>
+<p>冗余步骤多 虚拟机是完整的操作系统，一些系统级别的操作系统例如用户登录往往无法跳过</p>
+<p>启动慢</p>
+<p><strong>Linux容器</strong></p>
+<p>Linux容器（Linux Containers）是Linux发展出的另一种虚拟化技术。</p>
+<p>**Linux容器不是一个完整的操作系统，而是对进程进行隔离。**换句话讲，是在正常进程的外面套了一个保护层。对里面的进程来讲，它接触的各种资源都是虚拟的，从而实现与底层系统的隔离。</p>
+<p>它相比于虚拟机的优势在于：</p>
+<p>启动快 容器里面的应用就是底层操作系统里的一个进程而不是虚拟机内部的进程</p>
+<p>占用资源少 容器只占用需要的资源</p>
+<p>体积小 容器只要包含用到的组件即可</p>
+<p>比较起来，容器类似于轻量级的虚拟机，能够提供虚拟化的环境，但是成本开销小得多。</p>
+<p><strong>Docker</strong></p>
+<p>Docker是属于Linux容器的一种封装，提供简单易用的容器使用接口。</p>
+<p>Docker将应用程序与该程序的依赖，打包在一个文件里面。运行这个文件会生成一个虚拟容器。程序就在这个虚拟容器里运行，就好像在真实物理机上运行。</p>
+<p>Docker目前主要有三个用途：</p>
+<p>提供一次性的环境</p>
+<p>提供弹性的云服务</p>
+<p>组建微服务架构</p>
+<p><strong>Docker安装</strong></p>
+<p>Mac地址：<a target="_blank" rel="noopener" href="https://docs.docker.com/desktop/setup/install/mac-install/">Docker CE安装官方文档</a></p>
+<p>Windows地址：<a target="_blank" rel="noopener" href="https://docs.docker.com/desktop/setup/install/windows-install/">Docker CE安装官方文档</a></p>
+<p>安装过后运行下面的指令</p>
+<figure class="highlight plaintext"><figcaption><span>Text</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs Plain">$ docker version  <br>\# 或者  <br>$ docker info<br></code></pre></td></tr></table></figure>
+<p>Docker需要用户具有sudo权限，可以把用户加入Docker用户组</p>
+<figure class="highlight plaintext"><figcaption><span>Text</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs Plain">$ sudo usermod -aG docker $USER<br></code></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure>
+<p>Docker是服务器-客户端架构，命令行运行Docker命令的时候，需要本机有Docker服务。启动服务可以用以下命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs Bash">$ <span class="hljs-built_in">sudo</span> service docker start  <br>//service命令用法  <br>&lt;br/&gt;$ <span class="hljs-built_in">sudo</span> systemctl start docker  <br>//systemctl命令用法  <br>&lt;br/&gt;<br></code></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure>
+<p><strong>Image文件</strong></p>
+<p><strong>Docker把应用程序及其依赖，打包在image文件里面。</strong></p>
+<p>只有通过这个文件，才能生成Docker容器。image文件可以看作是容器的模版，Docker根据image文件生成容器的实例，同一个image文件可以生成多个同事运行的容器实例。</p>
+<p>image是二进制文件。实际开发中，一个image文件往往通过继承另一个image文件加上一些个性化设置而生成。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs Bash">$ docker image <span class="hljs-built_in">ls</span>  <br>//列出本机的所有image文件  <br>&lt;br/&gt;$ docker image <span class="hljs-built_in">rm</span> \[imageName\]  <br>//删除image文件<br></code></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure>
+<p>image文件是通用的，一台机器的image文件可以拷贝到另一台机器，为了节省时间，应尽量使用别人制作好的image文件，即使要定制，也应该基于别人的image文件进行加工而不是从零开始制作。</p>
+<p>image文件制作完成后可以上传到网上的仓库，Docker官方仓库链接为：<a target="_blank" rel="noopener" href="https://hub.docker.com/">Docker Hub</a></p>
+<p><strong>实例</strong></p>
+<p>用最简单的image文件”Hello World”为例</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs Bash">$ docker image pull library/hello-world<br></code></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<p>docker image pull用于抓取image文件，library&#x2F;hello-world是image文件在仓库的位置</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs Bash">$ docker image <span class="hljs-built_in">ls</span><br></code></pre></td></tr></table></figure>
 
+<p>抓取成功后就可以在本机看到这个image文件了</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs Bash">$ docker container run hello-world<br></code></pre></td></tr></table></figure>
+
+<p>运行这个image文件</p>
+<p>docker container run命令会从 image 文件，生成一个正在运行的容器实例。</p>
+<p>注意，docker container run命令具有自动抓取 image 文件的功能。如果发现本地没有指定的 image 文件，就会从仓库自动抓取。因此，前面的docker image pull命令并不是必需的步骤。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs Bash">$ docker container run hello-world  <br>&lt;br/&gt;Hello from Docker!  <br>This message shows that your installation appears to be working correctly.... ...<br></code></pre></td></tr></table></figure>
+
+<p>有些容器不会自动终止，因为提供的是服务。比如，安装运行 Ubuntu 的 image，就可以在命令行体验 Ubuntu 系统。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs Bash">$ docker container run -it ubuntu bash<br></code></pre></td></tr></table></figure>
+
+<p>对于那些不会自动终止的容器，必须使用<a target="_blank" rel="noopener" href="https://docs.docker.com/engine/reference/commandline/container_kill/">docker container kill</a> 命令手动终止。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs Bash">$ docker container <span class="hljs-built_in">kill</span> \[containID\]<br></code></pre></td></tr></table></figure>
+
+<p><strong>容器文件</strong></p>
+<p><strong>image文件生成的容器实例，本身也是一个文件，称为容器文件</strong></p>
+<p>一旦容器生成，就会同时存在两个文件：image文件和容器文件。而且关闭容器不会删除容器文件，只是容器暂停运行而已。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs Bash">$ docker container <span class="hljs-built_in">ls</span>  <br>\# 列出本机正在运行的容器  <br>&lt;br/&gt;$ docker container <span class="hljs-built_in">ls</span> --all  <br>\# 列出本机所有容器，包括终止运动的容器<br></code></pre></td></tr></table></figure>
+
+<p>上面命令的执行结果中包含容器ID，终止容器运行的docker container kill就需要提供这个ID。</p>
+<p>终止运行的容器文件依然会占据硬盘空间</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs Bash">$ dicker container <span class="hljs-built_in">rm</span> \[containerID\]<br></code></pre></td></tr></table></figure>
                 
               </div>
             
@@ -318,6 +381,21 @@
             <div>
               <div class="post-metas my-3">
   
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/Docker/" class="print-no-link">#Docker</a>
+      
+        <a href="/tags/Containerization/" class="print-no-link">#Containerization</a>
+      
+        <a href="/tags/DevOps/" class="print-no-link">#DevOps</a>
+      
+        <a href="/tags/Deployment/" class="print-no-link">#Deployment</a>
+      
+        <a href="/tags/Backend/" class="print-no-link">#Backend</a>
+      
+    </div>
   
 </div>
 
@@ -327,8 +405,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>Hello World</div>
-      <div>http://example.com/2025/07/22/hello-world/</div>
+      <div>Docker</div>
+      <div>http://example.com/2025/04/13/Docker/</div>
     </div>
     <div class="license-meta">
       
@@ -340,7 +418,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2025年7月22日</div>
+          <div>2025年4月13日</div>
         </div>
       
       
@@ -372,15 +450,15 @@
                   <article class="post-prev col-6">
                     
                     
+                      <a href="/2025/05/20/React%E5%AD%A6%E4%B9%A0/" title="React学习">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">React学习</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
                   </article>
                   <article class="post-next col-6">
                     
-                    
-                      <a href="/2025/05/20/React%E5%AD%A6%E4%B9%A0/" title="React学习">
-                        <span class="hidden-mobile">React学习</span>
-                        <span class="visible-mobile">下一篇</span>
-                        <i class="iconfont icon-arrowright"></i>
-                      </a>
                     
                   </article>
                 </div>
